@@ -1,25 +1,36 @@
-int circleColorR = 0;
-int circleColorG = 0;
-int circleColorB = 0;
-int rectWColorR = 255;
-int rectWColorG = 0;
-int rectWColorB = 0;
-int rectAColorR = 0;
-int rectAColorG = 255;
-int rectAColorB = 0;
-int rectSColorR = 0;
-int rectSColorG = 0;
-int rectSColorB = 255;
-int rectDColorR = 255;
-int rectDColorG = 255;
-int rectDColorB = 0;
-
+float circleColorR = 0;
+boolean circleRPov = True;
+float circleColorG = 0;
+boolean circleGPov = True;
+float circleColorB = 0;
+boolean circleBPov = True;
+float rectWColorR = 255;
+boolean rectWRPov = False;
+float rectWColorG = 0;
+boolean rectWGPov = True;
+float rectWColorB = 0;
+boolean rectWBPov = True;
+float rectAColorR = 0;
+boolean rectARPov = True;
+float rectAColorG = 255;
+boolean rectAGPov = False;
+float rectAColorB = 0;
+boolean rectABPov = True;
+float rectSColorR = 0;
+boolean rectSRPov = True;
+float rectSColorG = 0;
+float rectSColorB = 255;
+float rectDColorR = 255;
+float rectDColorG = 255;
+float rectDColorB = 0;
+float mainColorvar = 0;
 void setup()
 {
   size(1000,600);
 }
 void draw()
 {
+	mainColorvar = mainColorvar + 1;
 	fill(0);
 	ellipse(500,300,400,400);
 	circle();
@@ -30,7 +41,10 @@ void draw()
 }
 void circle()
 {
-	fill(0);
+	circleColorR = mainColorvar + ((int)Math.random()*6);
+	circleColorG = mainColorvar + ((int)Math.random()*6);
+	circleColorB = mainColorvar + ((int)Math.random()*6);
+	fill(circleColorR,circleColorG,circleColorB);
 	ellipse(500,300,400,400);
 }
 void rectUp()
