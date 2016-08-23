@@ -40,16 +40,16 @@ void rectUp()
 }
 void rectLeft()
 {
-	fill(0,255,0);
+	fill(rectAColorR,rectAColorG,rectAColorB);
  	rect(350,200,50,200);
 }
 void rectDown()
 {
-	fill(0,0,255);
+	fill(rectSColorR,rectSColorG,rectSColorB);
 	rect(400,400,200,50);
 }
 void rectRight()
 {
-	fill(255,255,0);
+	fill(rectDColorR,rectDColorG,rectDColorB);
 	rect(600,200,50,200);
 }
