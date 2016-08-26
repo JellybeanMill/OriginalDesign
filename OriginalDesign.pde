@@ -32,7 +32,7 @@ int colorRandomVar = 7;
 void setup()
 {
   size(1000,600);
-  int testvarx = 300;
+  /**int testvarx = 300;
   double outvar = 0;
   boolean teststatement = false;
   while (testvarx <= 700)
@@ -40,7 +40,7 @@ void setup()
   	outvar = (double)((Mat.sqrt((200*200)-((testvarx-500)*(testvarx-500))))-300);
   	System.out.println(testvarx+" "+outvar);
   	textvarx = testvarx+1;
-  }
+  }**/
 }
 void draw()
 {
